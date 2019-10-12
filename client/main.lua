@@ -211,6 +211,8 @@ function AttemptPicklock(location)
         TriggerServerEvent("suku:BreakPicklock", 1)
         TriggerServerEvent('suku:StartBurglaryBlip', true, location)
         isLockPicking = false
+        FreezeEntityPosition(GetPlayerPed(-1), false)
+        ClearPedTasks(GetPlayerPed(-1))
     else
         location.isActive = true
         TriggerServerEvent("suku:UpdateBurglariesToDB", BurglaryLocations)
