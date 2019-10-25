@@ -6,7 +6,7 @@ CREATE TABLE `player_burglaries` (
 
 INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES
 	('watch', 'Watch', -1, 0, 1),
-	('rose', 'Rose', 10, 0, 1, 0),
+	('rose', 'Rose', 10, 0, 1),
     ('umbrella', 'Umbrella', 10, 0, 1),
     ('ring', 'Ring', -1, 0, 1)
 ;
