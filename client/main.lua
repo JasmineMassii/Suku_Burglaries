@@ -210,8 +210,8 @@ function AttemptPicklock(location)
         exports['mythic_notify']:DoHudText('error', 'You have failed the attempt!')
         TriggerServerEvent("suku:BreakPicklock", 1)
         TriggerServerEvent('suku:StartBurglaryBlip', true, location)
-        isLockPicking = false
         FreezeEntityPosition(GetPlayerPed(-1), false)
+        isLockPicking = false
         ClearPedTasks(GetPlayerPed(-1))
     else
         location.isActive = true
